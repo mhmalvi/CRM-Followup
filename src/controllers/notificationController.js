@@ -5,18 +5,15 @@ const connection = require("../../db/db");
 const { isExists } = require("date-fns");
 
 const store = (req, res) => {
-  console.log(req.body)
+  console.log(req.body);
   const title = req.body.title;
   const start = req.body.start;
-  // console.log(start)
-
-  // exit()
   const end = req.body.end;
   const description = req.body.description;
   const user_id = req.body.user_id;
   const priority = req.body.priority;
   const notification_time = req.body.notification_time;
-  console.log(notification_time);
+  console.log(start);
   const sql =
     "insert into follow_ups (title,start,end,description,user_id, status, priority,notification_time) values(?,?,?,?,?,?,?,?)";
   connection.query(
