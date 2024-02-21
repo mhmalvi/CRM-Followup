@@ -36,9 +36,9 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
-server.listen7000, () => {
+server.listen(3000, () => {
   console.log("listening");
-};
+});
 
 var extractedData = new Array();
 // console.log("ghgtfhtgfh");
