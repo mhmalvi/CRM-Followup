@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
-server.listen(7000, () => {
+server.listen(3002, () => {
   console.log("listening");
 });
 
