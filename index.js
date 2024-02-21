@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 });
 server.listen7000, () => {
   console.log("listening");
-});
+};
 
 var extractedData = new Array();
 // console.log("ghgtfhtgfh");
