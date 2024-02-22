@@ -12,13 +12,13 @@ const store = (req, res) => {
   const description = req.body.description;
   const user_id = req.body.user_id;
   const priority = req.body.priority;
-  const notification_time = req.body.notification_time;
+  const notification_time = new Date(req.body.notification_time);
   console.log(start);
   const sql =
     "insert into follow_ups (title,start,end,description,user_id, status, priority,notification_time) values(?,?,?,?,?,?,?,?)";
   connection.query(
     sql,
-    [title, start, end, description, user_id, 1, priority, new Date(notification_time)],
+    [title, start, end, description, user_id, 1, priority, notification_time],
     (err, results) => {
       if (err) {
         console.log("error", err);
