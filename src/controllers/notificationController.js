@@ -52,7 +52,7 @@ const update = (req, res) => {
     sql,
     [title, start, end, 1, noti_time, description, user_id, req.body.id],
     (err, results) => {
-      console.log(results.affectedRows);
+      console.log(results);
       if (err) {
         res.status(500).json({
           message: "failed",
