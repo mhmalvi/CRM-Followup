@@ -16,7 +16,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const server = http.createServer(app);
-// const host = "192.168.0.121";
+const host = "192.168.0.121";
 app.use(
   cors({
     origin: "*",

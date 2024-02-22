@@ -37,6 +37,7 @@ const store = (req, res) => {
 };
 
 const update = (req, res) => {
+  console.log(req.body);
   const title = req.body.title;
   const start = req.body.start;
   const end = req.body.end;

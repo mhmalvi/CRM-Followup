@@ -18,7 +18,7 @@ const { fetchAll } = require("../controllers/NotificationFetchController");
 router.route("/notifications-list").post(list);
 router.route("/change-status").post(change_status);
 router.route("/follow-up").post(store);
-router.route("/follow-up-update/").put(update);
+router.route("/follow-up-update").put(update);
 router.route("/follow-up-by-user").post(get_by_user_id);
 router.route("/delete-notification").post(destroy);
 
