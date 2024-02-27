@@ -83,10 +83,10 @@ io.on("connection", (socket) => {
           // if (today_date >= date_from_db) {
           //   console.log("fdgfgf");
           //   if (today_hour >= db_hour) {
-          if (today >= date) {
+          // if (today >= date) {
             console.log("timezone");
             time.push(results[i]);
-          }
+          // }
           //   }
           // }
         }
