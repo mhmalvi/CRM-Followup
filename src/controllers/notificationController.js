@@ -15,8 +15,8 @@ const store = (req, res) => {
   // const priority = req.body.priority;
   const notification_time = req.body.notification_time;
   console.log(start);
-  const sql =
-    "insert into follow_ups (title,start,end,description,user_id, priority, status,notification_time) values (?,?,?,?,?,?,?,?)";
+  // const sql =
+  //   "insert into follow_ups (title,start,end,description,user_id, priority, status,notification_time) values (?,?,?,?,?,?,?,?)";
   connection.query(
     sql,
     [title, start, end, description, user_id, 1, 1, notification_time],
