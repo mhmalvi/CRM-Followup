@@ -6,7 +6,7 @@ const { isExists } = require("date-fns");
 
 const store = (req, res) => {
   console.log(req.body);
-  
+
   const title = req.body.title;
   const start = req.body.start;
   const end = req.body.end;
