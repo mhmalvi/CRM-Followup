@@ -55,7 +55,7 @@ io.on("connection", (socket) => {
         // console.log(JSON.stringify(results));
         for (let i = 0; i < results.length; i++) {
           var date = new Date(results[i].notification_time);
-          var today = new Date().toLocaleString();
+          var today = new Date();
           // var today_date =
           //   today.getFullYear() +
           //   "-" +
