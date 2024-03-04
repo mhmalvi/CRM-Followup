@@ -83,7 +83,11 @@ io.on("connection", (socket) => {
           var today_in_millisecond =
             today.getTime() + timeZoneOffsetInMillisecond;
           var date_in_millisecond = date.getTime();
-          console.log("current date", today);
+          console.log("offset in second", today.getTimezoneOffset());
+          console.log(
+            "offset in millisecond",
+            today.getTimezoneOffset() * 1000
+          );
           console.log("db date", date);
           console.log("current date", today_in_millisecond);
           console.log("db date", date_in_millisecond);
