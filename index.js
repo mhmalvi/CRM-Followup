@@ -78,15 +78,20 @@ io.on("connection", (socket) => {
           // today_minute = String(today_minute).padStart(2, "0");
 
           // var db_minute = date.getMinutes();
+          // var tzDifference =
+          // timeZoneFromDB * 60 + targetTime.getTimezoneOffset();
+          var today_in_millisecond =
+            today.getTime() + date.getTimezoneOffset() * 1000;
+          var date_in_millisecond = date.getTime();
           console.log("current date", today);
           console.log("db date", date);
           // if (today_date >= date_from_db) {
           //   console.log("fdgfgf");
           //   if (today_hour >= db_hour) {
-          // if (today >= date) {
+          if (today_in_millisecond >= date_in_millisecond) {
             console.log("timezone");
             time.push(results[i]);
-          // }
+          }
           //   }
           // }
         }
