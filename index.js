@@ -81,10 +81,12 @@ io.on("connection", (socket) => {
           // var tzDifference =
           // timeZoneFromDB * 60 + targetTime.getTimezoneOffset();
           var today_in_millisecond =
-            today.getTime() + date.getTimezoneOffset() * 1000;
+            today.getTime() + today.getTimezoneOffset() * 1000;
           var date_in_millisecond = date.getTime();
           console.log("current date", today);
           console.log("db date", date);
+          console.log("current date", today_in_millisecond);
+          console.log("db date", date_in_millisecond);
           // if (today_date >= date_from_db) {
           //   console.log("fdgfgf");
           //   if (today_hour >= db_hour) {
