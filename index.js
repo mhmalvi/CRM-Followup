@@ -79,9 +79,9 @@ io.on("connection", (socket) => {
 
           // var db_minute = date.getMinutes();
           // var tzDifference =
-          // timeZoneFromDB * 60 + targetTime.getTimezoneOffset();
+          var timeZoneOffsetInMillisecond = today.getTimezoneOffset() * 1000;
           var today_in_millisecond =
-            today.getTime() + today.getTimezoneOffset() * 1000;
+            today.getTime() + timeZoneOffsetInMillisecond;
           var date_in_millisecond = date.getTime();
           console.log("current date", today);
           console.log("db date", date);
