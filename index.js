@@ -83,6 +83,7 @@ io.on("connection", (socket) => {
           var today_in_millisecond =
             today.getTime() + timeZoneOffsetInMillisecond;
           var date_in_millisecond = date.getTime();
+          console.log('-------------------------------------');
           console.log("offset in second", today.getTimezoneOffset());
           console.log(
             "offset in millisecond",
@@ -91,6 +92,7 @@ io.on("connection", (socket) => {
           console.log("db date", date);
           console.log("current date", today_in_millisecond);
           console.log("db date", date_in_millisecond);
+          console.log("-------------------------------------");
           // if (today_date >= date_from_db) {
           //   console.log("fdgfgf");
           //   if (today_hour >= db_hour) {
