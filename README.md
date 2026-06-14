@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![CRM-Followup](docs/assets/social-card.png)
 
+![CRM-Followup — architecture](docs/assets/architecture.png)
+
 # CRM Follow-Up Service
 
 A dedicated microservice within the CRM ecosystem responsible for managing follow-up reminders and real-time notifications. This service enables CRM users to schedule, track, and receive timely follow-up alerts for their leads and contacts.
